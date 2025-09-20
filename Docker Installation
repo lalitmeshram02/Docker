@@ -1,15 +1,18 @@
-	Ø Docker is advanced of Virtualization.
-	Ø Container contain everything which is needed to run by the application.
-	Ø Containerization virtualize the operating system.
-	Ø Docker provide the OS level Virtualization.
-	Ø Docker Container : A container is runtime instance of image, we can start one or more container from one image.
-	Ø Virtualization: Splitting of physical resources in as many a logical resources.   
-	Ø Virtualization virtualized the underline hardware.
+                                              Docker
+
+- Docker is advanced of Virtualization.
+- Container contain everything which is needed to run by the application.
+- Containerization virtualize the operating system.
+- Docker provide the OS level Virtualization.
+- Docker Container : A container is runtime instance of image, we can start one or more container from one image.
+- Virtualization: Splitting of physical resources in as many a logical resources.   
+- Virtualization virtualized the underline hardware.
 	
 	
 	Hypervisor : VMWare : ESXI 6.5
-	                       RedHat: KVM
-	                      Microsoft: HyperV
+	             RedHat: KVM
+	             Microsoft: HyperV
+                 Citrix: Zen Hypervisor
 	
 	
 	#apt-get install openssh-server -y        --------> Openssh need to install for taking ssh from Outside
@@ -19,7 +22,8 @@
 	#systemctl status sshd
 	
 	#lsb_release -a   OR #cat /etc/issue   OR  cat /etc/os-release    ---------------------> version of ubuntu machine
-	
+
+================================================================================================================================================================
 	Ø Docker installation:
 	
 	#sudo apt-get update
