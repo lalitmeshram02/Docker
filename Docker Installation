@@ -15,7 +15,7 @@
                  Citrix: Zen Hypervisor
 	
 	
-	#apt-get install openssh-server -y        --------> Openssh need to install for taking ssh from Outside
+	#apt-get install openssh-server -y      ===============> Openssh need to install for taking ssh from Outside
 	
 	#systemctl start sshd                           
 	#systemctl enable sshd                    
@@ -24,7 +24,7 @@
 	#lsb_release -a   OR #cat /etc/issue   OR  cat /etc/os-release    ---------------------> version of ubuntu machine
 
 ================================================================================================================================================================
-	Ø Docker installation:
+	Docker installation:
 	
 	#sudo apt-get update
 	
@@ -70,3 +70,6 @@
 	:wq!
 	
 	#bash docker_install.sh
+
+================================================================================================================================================================
+
