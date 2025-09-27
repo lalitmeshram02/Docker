@@ -92,3 +92,56 @@ Network: Connect containers for communication
 
 ================================================================================================================================================================
 
+#docker --version   ======> Check Docker version
+
+#docker ps ======>  List running containers
+
+#docker ps -a =====> List all containers
+
+#docker images  =====> List images
+
+#docker rmi images  ====> Delete image
+
+#docker pull nginx  ====> Download image
+
+#docker run -d --name web -p 8080:80 nginx    ====> Run container
+
+#docker exec -it web /bin/bash   =====> enter inside container
+
+#docker stop web   =====> Stop Container
+
+#docker rm web   ====> remove
+
+
+
+Dockerfile:
+
+A Dockerfile is a text file with instructions to build a Docker image.
+Each instruction creates a new layer in the image.
+The final image can be run as a container.
+
+Instruction	Description	Example
+FROM	     Base image	                                         FROM ubuntu:22.04
+RUN	         Execute commands while building image	             RUN apt-get update && apt-get install -y nginx
+COPY	     Copy files from host to image	                     COPY index.html /usr/share/nginx/html/
+ADD	         Copy files (with extra features like auto-unpack)	 ADD app.tar.gz /app/
+WORKDIR	     Set working directory	                             WORKDIR /app
+CMD	         Default command when container runs	             CMD ["nginx", "-g", "daemon off;"]
+ENTRYPOINT	 Command that always runs, can accept args	         ENTRYPOINT ["python3", "app.py"]
+EXPOSE	     Document port container listens on	                 EXPOSE 80
+ENV	         Set environment variables	                         ENV APP_ENV=production
+VOLUME	     Define mount point for persistence	                 VOLUME /data
+
+
+#docker build -t mynginx .
+
+#docker run -d -p 8080:80 mynginx
+
+
+===================================================================================================================================================================
+
+
+
+
+
+
