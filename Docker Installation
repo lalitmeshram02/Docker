@@ -7,6 +7,25 @@
 - Docker Container : A container is runtime instance of image, we can start one or more container from one image.
 - Virtualization: Splitting of physical resources in as many a logical resources.   
 - Virtualization virtualized the underline hardware.
+
+- Docker is a platform for building, shipping, and running applications in containers.
+- A container is a lightweight, portable, and isolated environment.
+- Unlike Virtual Machines (VMs), containers don’t need a full OS — they share the host’s kernel, making them fast and efficient.
+
+VMs = heavy (full OS per VM).
+Containers = lightweight (share host OS).
+
+Image- Blueprint/template for a container
+
+Container- Running instance of an image
+
+Dockerfile- Instructions to build an image
+
+Registry- Storage for images (e.g., Docker Hub, AWS ECR, GCP Artifact Registry)
+
+Volume- Persistent storage for containers
+
+Network: Connect containers for communication
 	
 	
 	Hypervisor : VMWare : ESXI 6.5
